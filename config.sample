@@ -1,0 +1,7 @@
+---
+veracross:
+  username:  'api.username'
+  password:  'aPiPaSsWORd'
+  client:   'school.name'
+slack:
+  webhook_url: 'https://hooks.slack.com/services/T150/SLA0987CK87767'
