@@ -4,4 +4,5 @@ RUN gem install slack-notify
 RUN gem install rest-client
 #RUN DEBIAN_FRONTEND=noninteractive apt-get install -qqy --no-install-recommends \
 ADD ./recent.rb /slack/
-CMD ["ruby", "/slack/recent.rb"]
+WORKDIR /slack/
+CMD ["ruby", "recent.rb"]

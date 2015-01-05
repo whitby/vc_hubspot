@@ -25,7 +25,6 @@ recent_alumni = RestClient.get("https://#{@username}:#{@password}@api.veracross.
 recent_parents = RestClient.get("https://#{@username}:#{@password}@api.veracross.com/#{@client}/v1/parents/recent.json?option=1")
 recent_students = RestClient.get("https://#{@username}:#{@password}@api.veracross.com/#{@client}/v1/students/recent.json?option=1")
 #TODO: parse for errors
-puts @username
 #Unless the list is empty, notify Slack channel
 unless JSON.parse(recent_students).empty?
   JSON.parse(recent_students).each do |student|
